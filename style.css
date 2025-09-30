@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form table {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 500px;
+}
+
+td, th {
+    padding: 10px 5px;
+}
+
+td[colspan="2"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #6C63FF;
+    box-shadow: 0 0 5px rgba(108,99,255,0.5);
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background: #6C63FF;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #574fd6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+    form table {
+        width: 90%;
+        padding: 20px;
+    }
+}
+/* Hobbies as pill buttons */
+input[type="checkbox"] {
+    display: none; /* hide the default checkbox */
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 25px;
+    border: 1px solid #6C63FF;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+    color: #6C63FF;
+    font-weight: 500;
+}
+
+input[type="checkbox"]:checked + label {
+    background: #6C63FF;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Select as pill-style */
+select {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #6C63FF;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #6C63FF;
+    box-shadow: 0 0 5px rgba(108,99,255,0.5);
+}
+/* Make table width responsive */
+form table {
+    width: 500px; /* default desktop width */
+    max-width: 95%; /* shrink on smaller screens */
+    margin: 0 auto;
+}
+
+/* Inputs, selects full width */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    box-sizing: border-box; /* prevents overflow */
+}
+
+/* Make checkboxes pills wrap on small screens */
+td input[type="checkbox"] + label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Responsive for small devices */
+@media (max-width: 600px) {
+    form table {
+        width: 95%;
+        padding: 20px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td input[type="text"],
+    td input[type="email"],
+    td input[type="password"],
+    td input[type="tel"],
+    td select {
+        width: 100%;
+    }
+}
