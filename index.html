@@ -1,0 +1,165 @@
+<html>
+<head><link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/mohammadzaid80230@gmail.com" method="POST" autocomplete="on">
+        <table cellpadding="5" cellspacing="10" align="center">
+            <tr>
+                <td>Name: </td>
+                <td>
+                    <input type="text" name="firstName" placeholder="First Name" pattern="[A-Za-z]+" required> &nbsp
+                    <input type="text" name="lastName" placeholder="Last Name" pattern="[A-Za-z]+" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="Female" name="gender">Female
+                </td>
+            </tr>
+            <thead>
+            <tr>
+                <td colspan="2" style="text-align:center; font-weight:bold;">Personal Details</td>
+            </tr>
+            </thead>
+            <tr>
+                <td>Father's Name:</td>
+                <td><input type="text" name="fatherName" placeholder="Father's Name" pattern="[A-Za-z]+" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="text" 
+                           name="dob"
+                           placeholder="DD/MM/YYYY"
+                           pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" 
+                           title="Enter DOB in DD/MM/YYYY format" required>
+                </td>
+            </tr>
+            <tr>
+                <td>E-Mail: </td>
+                <td><input type="email" name="email" placeholder="example@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td>Contact: </td>
+                <td><input type="tel" size="1" value="+91" disabled ><input type="tel" name="Contact" pattern="[6-9][0-9]{9}" required></td>
+            </tr>
+            <tr>
+                <td>City: </td>
+                <td>
+                    <input type="text" name="city" pattern="[A-Za-z]+" required> &nbsp
+                    <input type="text" name="pincode" pattern="\d{6}" size="6" placeholder="PIN-CODE" required>
+                </td>
+            </tr>
+            <tr>
+                <td>State: </td>
+                <td>
+                    <select name="state" required>
+                        <option value="">--------------STATE-------------</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="GA">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="GO">Goa</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="WB">West Bengal</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="PY">Puducherry</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification: </td>
+                <td>
+                    <select name="qualification" required>
+                        <option value="">--------------QUALIFICATION-------------</option>
+                        <option value="highschool">High School</option>
+                        <option value="intermediate">Intermediate / 12th</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td> <input type="checkbox" id="reading" name="hobbies" value="reading" required>
+<label for="reading">Reading</label>
+
+<input type="checkbox" id="sports" name="hobbies" value="sports">
+<label for="sports">Sports</label>
+
+<input type="checkbox" id="music" name="hobbies" value="music">
+<label for="music">Music</label>
+
+<input type="checkbox" id="gaming" name="hobbies" value="gaming">
+<label for="gaming">Gaming</label>
+
+<input type="checkbox" id="travelling" name="hobbies" value="travelling">
+<label for="travelling">Travelling</label>
+
+<input type="checkbox" id="drawing" name="hobbies" value="drawing">
+<label for="drawing">Drawing</label>
+
+            </tr>
+            <tr>
+                <td>Martial Status: </td>
+                <td><select name="Martial_Status">
+                    <option value="none">---SELECT---</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Stay No To prefer">NO TO PREFER</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" placeholder="Minimum 3 characters" required></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td>
+                    <input type="password" name="password"
+                           pattern="(?=.*[A-Za-z]{4,})(?=.*\d{2,})(?=.*[@]).{7,}" 
+                           title="Password must have at least 4 letters, 2 numbers, and 1 @ symbol" 
+                           required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="REGISTER">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
